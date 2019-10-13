@@ -1,0 +1,437 @@
+2019-09-12 17:40:07,330 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-12 17:40:11,776 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-12 17:40:28,482 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-12 17:42:43,797 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-12 17:43:20,206 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-12 17:45:22,821 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-12 17:46:09,712 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-12 17:47:44,851 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-12 17:48:18,085 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-12 17:48:39,233 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-12 19:44:04,290 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-12 19:50:31,004 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-12 19:51:50,978 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-12 19:52:46,648 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-13 13:54:01,962 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-13 13:55:31,101 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-13 13:56:02,645 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-13 13:56:20,315 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-13 13:58:23,808 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-13 13:58:57,040 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-13 14:00:00,968 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-13 14:00:04,646 ERROR: Exception on /login [GET] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\项目\project\app\routes.py", line 29, in login
+    form = request.args.form
+AttributeError: 'ImmutableMultiDict' object has no attribute 'form'
+2019-09-13 14:01:27,024 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-13 14:01:29,887 ERROR: Exception on /login [GET] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\项目\project\app\routes.py", line 31, in login
+    if form.validate_on_submit():
+AttributeError: 'NoneType' object has no attribute 'validate_on_submit'
+2019-09-13 14:02:35,522 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-13 14:04:35,595 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-13 14:05:57,793 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-13 14:06:11,219 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-13 14:06:20,599 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-13 14:06:46,641 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-13 14:07:50,330 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-13 14:08:44,206 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-13 14:09:41,238 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-13 14:09:43,867 ERROR: Exception on /login [GET] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1816, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1831, in finalize_request
+    response = self.make_response(rv)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1957, in make_response
+    'The view function did not return a valid response. The'
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2019-09-13 14:24:28,721 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-13 14:24:32,624 ERROR: Exception on /login [GET] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1816, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1831, in finalize_request
+    response = self.make_response(rv)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1957, in make_response
+    'The view function did not return a valid response. The'
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2019-09-13 14:25:10,322 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-13 14:25:12,936 ERROR: Exception on /login [GET] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1816, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1831, in finalize_request
+    response = self.make_response(rv)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1957, in make_response
+    'The view function did not return a valid response. The'
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2019-09-13 14:25:54,234 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-13 14:25:57,610 ERROR: Exception on /login [GET] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1816, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1831, in finalize_request
+    response = self.make_response(rv)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1957, in make_response
+    'The view function did not return a valid response. The'
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2019-09-13 14:26:43,488 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-13 14:26:45,674 ERROR: Exception on /home [GET] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1974, in make_response
+    rv = self.response_class.force_type(rv, request.environ)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\werkzeug\wrappers.py", line 921, in force_type
+    response = BaseResponse(*_run_wsgi_app(response, environ))
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\werkzeug\wrappers.py", line 59, in _run_wsgi_app
+    return _run_wsgi_app(*args)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\werkzeug\test.py", line 923, in run_wsgi_app
+    app_rv = app(environ, start_response)
+TypeError: 'int' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1816, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1831, in finalize_request
+    response = self.make_response(rv)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1982, in make_response
+    reraise(TypeError, new_error, sys.exc_info()[2])
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 34, in reraise
+    raise value.with_traceback(tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1974, in make_response
+    rv = self.response_class.force_type(rv, request.environ)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\werkzeug\wrappers.py", line 921, in force_type
+    response = BaseResponse(*_run_wsgi_app(response, environ))
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\werkzeug\wrappers.py", line 59, in _run_wsgi_app
+    return _run_wsgi_app(*args)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\werkzeug\test.py", line 923, in run_wsgi_app
+    app_rv = app(environ, start_response)
+TypeError: 'int' object is not callable
+The view function did not return a valid response. The return type must be a string, tuple, Response instance, or WSGI callable, but it was a int.
+2019-09-13 14:27:27,981 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-13 14:27:42,715 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-13 14:27:45,081 ERROR: Exception on /home [GET] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\项目\project\app\routes.py", line 76, in home
+    return response_login_request()
+NameError: name 'response_login_request' is not defined
+2019-09-13 14:28:29,084 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-13 14:28:33,237 ERROR: Exception on /home [GET] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1974, in make_response
+    rv = self.response_class.force_type(rv, request.environ)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\werkzeug\wrappers.py", line 921, in force_type
+    response = BaseResponse(*_run_wsgi_app(response, environ))
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\werkzeug\wrappers.py", line 59, in _run_wsgi_app
+    return _run_wsgi_app(*args)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\werkzeug\test.py", line 923, in run_wsgi_app
+    app_rv = app(environ, start_response)
+TypeError: response_home_requests() takes 0 positional arguments but 2 were given
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1816, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1831, in finalize_request
+    response = self.make_response(rv)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1982, in make_response
+    reraise(TypeError, new_error, sys.exc_info()[2])
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 34, in reraise
+    raise value.with_traceback(tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1974, in make_response
+    rv = self.response_class.force_type(rv, request.environ)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\werkzeug\wrappers.py", line 921, in force_type
+    response = BaseResponse(*_run_wsgi_app(response, environ))
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\werkzeug\wrappers.py", line 59, in _run_wsgi_app
+    return _run_wsgi_app(*args)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\werkzeug\test.py", line 923, in run_wsgi_app
+    app_rv = app(environ, start_response)
+TypeError: response_home_requests() takes 0 positional arguments but 2 were given
+The view function did not return a valid response. The return type must be a string, tuple, Response instance, or WSGI callable, but it was a function.
+2019-09-13 14:29:05,699 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-13 14:29:10,989 ERROR: Exception on /home [GET] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1974, in make_response
+    rv = self.response_class.force_type(rv, request.environ)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\werkzeug\wrappers.py", line 921, in force_type
+    response = BaseResponse(*_run_wsgi_app(response, environ))
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\werkzeug\wrappers.py", line 59, in _run_wsgi_app
+    return _run_wsgi_app(*args)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\werkzeug\test.py", line 923, in run_wsgi_app
+    app_rv = app(environ, start_response)
+TypeError: function() argument 1 must be code, not dict
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1816, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1831, in finalize_request
+    response = self.make_response(rv)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1982, in make_response
+    reraise(TypeError, new_error, sys.exc_info()[2])
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 34, in reraise
+    raise value.with_traceback(tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1974, in make_response
+    rv = self.response_class.force_type(rv, request.environ)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\werkzeug\wrappers.py", line 921, in force_type
+    response = BaseResponse(*_run_wsgi_app(response, environ))
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\werkzeug\wrappers.py", line 59, in _run_wsgi_app
+    return _run_wsgi_app(*args)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\werkzeug\test.py", line 923, in run_wsgi_app
+    app_rv = app(environ, start_response)
+TypeError: function() argument 1 must be code, not dict
+The view function did not return a valid response. The return type must be a string, tuple, Response instance, or WSGI callable, but it was a type.
+2019-09-13 14:30:27,125 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-13 14:30:30,365 ERROR: Exception on /home [GET] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\项目\project\app\routes.py", line 76, in home
+    return str(len(response_home_requests()))+" 1234"
+  File "D:\项目\project\app\response.py", line 22, in response_home_requests
+    return josnify([to_dict(i) for i in all_info])
+NameError: name 'josnify' is not defined
+2019-09-13 14:31:14,915 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-13 14:31:17,539 ERROR: Exception on /home [GET] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\项目\project\app\routes.py", line 76, in home
+    return str(len(response_home_requests()))+" 1234"
+TypeError: object of type 'Response' has no len()
+2019-09-13 14:31:54,872 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-13 18:19:01,488 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-13 18:19:49,893 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-13 18:23:59,854 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-13 18:25:37,157 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-13 18:26:17,316 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-13 18:27:51,907 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-13 18:28:07,979 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-18 18:06:21,244 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-18 18:12:20,991 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-18 18:12:34,665 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-18 18:13:01,802 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-18 18:13:47,168 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-18 18:14:08,295 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-18 18:14:42,469 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-21 12:33:24,686 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-21 12:34:15,869 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-21 12:50:34,858 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-21 12:51:03,860 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-21 12:59:13,459 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-21 13:07:41,868 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-21 13:08:06,497 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-21 13:08:18,067 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-21 13:08:56,844 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-21 13:18:30,420 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-21 13:24:27,018 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-21 13:27:11,547 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-21 13:33:04,316 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-21 13:33:04,810 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-21 13:35:23,892 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-21 13:40:02,829 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-21 13:40:34,996 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-21 13:40:49,335 INFO: Microblog startup [in D:\项目\project\app\__init__.py:31]
+2019-09-21 13:42:45,863 INFO: Microblog startup [in D:\项目\project\app\__init__.py:32]
+2019-09-21 13:43:09,589 INFO: Microblog startup [in D:\项目\project\app\__init__.py:32]
+2019-09-21 13:43:28,911 INFO: Microblog startup [in D:\项目\project\app\__init__.py:32]
+2019-09-21 13:48:33,014 INFO: Microblog startup [in D:\项目\project\app\__init__.py:32]
+2019-09-22 21:14:14,876 INFO: Microblog startup [in D:\项目\project\app\__init__.py:32]
+2019-09-22 21:14:40,815 INFO: Microblog startup [in D:\项目\project\app\__init__.py:32]
+2019-09-22 21:19:19,428 INFO: Microblog startup [in D:\项目\project\app\__init__.py:32]
+2019-09-22 21:19:40,534 INFO: Microblog startup [in D:\项目\project\app\__init__.py:32]
+2019-09-22 21:20:09,790 INFO: Microblog startup [in D:\项目\project\app\__init__.py:32]
+2019-09-22 21:21:19,819 INFO: Microblog startup [in D:\项目\project\app\__init__.py:32]
+2019-09-22 21:22:08,868 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-22 21:22:34,946 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-22 21:25:19,184 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-22 21:25:46,744 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-22 21:26:44,073 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-22 21:26:52,376 ERROR: Exception on /api/get_all_info [GET] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1249, in _execute_context
+    cursor, statement, parameters, context
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\default.py", line 552, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such column: merchant_information.rank_points
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\项目\project\app\routes.py", line 88, in get_all_info
+    return response_all_info_requests()
+  File "D:\项目\project\app\response.py", line 21, in response_all_info_requests
+    all_info = Merchant_information.query.all()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\query.py", line 3178, in all
+    return list(self)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\query.py", line 3334, in __iter__
+    return self._execute_and_instances(context)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\query.py", line 3359, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 988, in execute
+    return meth(self, multiparams, params)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1107, in _execute_clauseelement
+    distilled_params,
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1253, in _execute_context
+    e, statement, parameters, cursor, context
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1473, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1249, in _execute_context
+    cursor, statement, parameters, context
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\default.py", line 552, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such column: merchant_information.rank_points
+[SQL: SELECT merchant_information.id AS merchant_information_id, merchant_information.name AS merchant_information_name, merchant_information.addr AS merchant_information_addr, merchant_information.url AS merchant_information_url, merchant_information.contact AS merchant_information_contact, merchant_information.telnum AS merchant_information_telnum, merchant_information.info_from AS merchant_information_info_from, merchant_information.remark AS merchant_information_remark, merchant_information.channel AS merchant_information_channel, merchant_information.rank_points AS merchant_information_rank_points, merchant_information.update_time AS merchant_information_update_time 
+FROM merchant_information]
+(Background on this error at: http://sqlalche.me/e/e3q8)
+2019-09-22 21:30:23,418 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-22 21:30:31,748 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-22 21:30:38,561 ERROR: Exception on /api/get_all_info [GET] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1249, in _execute_context
+    cursor, statement, parameters, context
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\default.py", line 552, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such column: merchant_information.rank_points
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\项目\project\app\routes.py", line 88, in get_all_info
+    return response_all_info_requests()
+  File "D:\项目\project\app\response.py", line 21, in response_all_info_requests
+    all_info = Merchant_information.query.all()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\query.py", line 3178, in all
+    return list(self)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\query.py", line 3334, in __iter__
+    return self._execute_and_instances(context)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\query.py", line 3359, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 988, in execute
+    return meth(self, multiparams, params)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1107, in _execute_clauseelement
+    distilled_params,
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1253, in _execute_context
+    e, statement, parameters, cursor, context
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1473, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1249, in _execute_context
+    cursor, statement, parameters, context
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\default.py", line 552, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such column: merchant_information.rank_points
+[SQL: SELECT merchant_information.id AS merchant_information_id, merchant_information.name AS merchant_information_name, merchant_information.addr AS merchant_information_addr, merchant_information.url AS merchant_information_url, merchant_information.contact AS merchant_information_contact, merchant_information.telnum AS merchant_information_telnum, merchant_information.info_from AS merchant_information_info_from, merchant_information.remark AS merchant_information_remark, merchant_information.channel AS merchant_information_channel, merchant_information.rank_points AS merchant_information_rank_points, merchant_information.update_time AS merchant_information_update_time 
+FROM merchant_information]
+(Background on this error at: http://sqlalche.me/e/e3q8)

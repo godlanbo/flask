@@ -1,0 +1,499 @@
+2019-10-10 20:39:30,681 ERROR: Exception on /api/add_store_info [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1179, in _execute_context
+    context = constructor(dialect, self, conn, *args)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\default.py", line 719, in _init_compiled
+    param.append(processors[key](compiled_params[key]))
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\dialects\sqlite\base.py", line 740, in process
+    "SQLite DateTime type only accepts Python "
+TypeError: SQLite DateTime type only accepts Python datetime and date objects as input.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 105, in decorated
+    return f(*args, **kwargs)
+  File "D:\项目\project\app\routes.py", line 234, in add_store_info
+    db.session.commit()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\scoping.py", line 162, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\session.py", line 1027, in commit
+    self.transaction.commit()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\session.py", line 494, in commit
+    self._prepare_impl()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\session.py", line 473, in _prepare_impl
+    self.session.flush()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\session.py", line 2459, in flush
+    self._flush(objects)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\session.py", line 2597, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\util\compat.py", line 153, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\session.py", line 2557, in _flush
+    flush_context.execute()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 422, in execute
+    rec.execute(self)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 589, in execute
+    uow,
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\persistence.py", line 245, in save_obj
+    insert,
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\persistence.py", line 1138, in _emit_insert_statements
+    statement, params
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 988, in execute
+    return meth(self, multiparams, params)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1107, in _execute_clauseelement
+    distilled_params,
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1182, in _execute_context
+    e, util.text_type(statement), parameters, None, None
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1473, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1179, in _execute_context
+    context = constructor(dialect, self, conn, *args)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\default.py", line 719, in _init_compiled
+    param.append(processors[key](compiled_params[key]))
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\dialects\sqlite\base.py", line 740, in process
+    "SQLite DateTime type only accepts Python "
+sqlalchemy.exc.StatementError: (builtins.TypeError) SQLite DateTime type only accepts Python datetime and date objects as input.
+[SQL: INSERT INTO store_info (store_name, store_address, phone_number, score, comment_num, city, web_link, web, remark, time) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: [{'phone_number': '1', 'web': '大众点评', 'remark': '1', 'time': '2019-10-10-20-39-28', 'store_name': '1', 'web_link': '大众点评', 'store_address': '1', 'comment_num': '0', 'score': '1', 'city': None}]]
+2019-10-10 20:44:56,300 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-10 20:45:15,175 ERROR: Exception on /api/add_store_info [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 105, in decorated
+    return f(*args, **kwargs)
+  File "D:\项目\project\app\routes.py", line 218, in add_store_info
+    time = datetime.datetime.strptime(data['time'],'%Y-%m-%d %H:%m:%s') # 爬取时间
+AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+2019-10-10 20:45:59,223 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-10 20:46:23,269 ERROR: Exception on /api/add_store_info [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 105, in decorated
+    return f(*args, **kwargs)
+  File "D:\项目\project\app\routes.py", line 218, in add_store_info
+    time = datetime.strptime(data['time'],'%Y-%m-%d %H:%m:%s') # 爬取时间
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\_strptime.py", line 577, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\_strptime.py", line 351, in _strptime
+    (bad_directive, format)) from None
+ValueError: 's' is a bad directive in format '%Y-%m-%d %H:%m:%s'
+2019-10-10 20:47:48,849 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-10 21:01:43,720 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-10 21:01:55,355 ERROR: Exception on /api/get_store_info [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 105, in decorated
+    return f(*args, **kwargs)
+  File "D:\项目\project\app\routes.py", line 172, in get_all_info
+    info,pages = store_info.get_all_store_info(page_num)
+  File "D:\项目\project\app\models.py", line 169, in get_all_store_info
+    return [info.to_dict() for info in all_info], page.pages
+  File "D:\项目\project\app\models.py", line 169, in <listcomp>
+    return [info.to_dict() for info in all_info], page.pages
+  File "D:\项目\project\app\models.py", line 162, in to_dict
+    self.web , "remark":self.remark , "time":(datetime.strptime(self.time, GMT_FORMAT)) }
+TypeError: strptime() argument 1 must be str, not datetime.datetime
+2019-10-10 21:02:56,017 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-10 21:03:34,521 ERROR: Exception on /api/get_store_info [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 105, in decorated
+    return f(*args, **kwargs)
+  File "D:\项目\project\app\routes.py", line 172, in get_all_info
+    info,pages = store_info.get_all_store_info(page_num)
+  File "D:\项目\project\app\models.py", line 169, in get_all_store_info
+    return [info.to_dict() for info in all_info], page.pages
+  File "D:\项目\project\app\models.py", line 169, in <listcomp>
+    return [info.to_dict() for info in all_info], page.pages
+  File "D:\项目\project\app\models.py", line 162, in to_dict
+    self.web , "remark":self.remark , "time":(datetime.strptime(str(self.time), GMT_FORMAT)) }
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\_strptime.py", line 577, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\_strptime.py", line 359, in _strptime
+    (data_string, format))
+ValueError: time data '2019-10-10 20:47:53' does not match format '%a %b %d %Y %H:%M:%S GMT'
+2019-10-10 21:05:10,070 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-10 21:12:13,481 ERROR: Exception on /api/add_user [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 105, in decorated
+    return f(*args, **kwargs)
+  File "D:\项目\project\app\routes.py", line 51, in add_user
+    if g.user.right < 5 or (right == 5 and g.user.right != 6) or right >= 6:
+TypeError: '>=' not supported between instances of 'str' and 'int'
+2019-10-10 21:14:52,229 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-10 21:15:05,578 ERROR: Exception on /api/add_user [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 105, in decorated
+    return f(*args, **kwargs)
+  File "D:\项目\project\app\routes.py", line 54, in add_user
+    all_account = get_account(company,userNum)
+  File "D:\项目\project\app\models.py", line 245, in get_account
+    return [company_num+("00" + str(company_user_num + offset))[-3:] for offset in range(userNum)]
+TypeError: 'str' object cannot be interpreted as an integer
+2019-10-10 21:23:38,036 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-12 14:59:47,778 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-12 15:00:00,046 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-12 15:00:09,340 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-12 15:00:24,251 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-12 15:00:47,083 ERROR: Exception on /api/check_account [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\项目\project\app\routes.py", line 23, in check_account
+    account = data['account']
+TypeError: list indices must be integers or slices, not str
+2019-10-12 15:01:11,089 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-12 15:02:24,382 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-12 15:02:59,396 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-12 15:04:20,508 ERROR: Exception on /api/get_store_info [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 103, in decorated
+    return self.auth_error_callback()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 44, in decorated
+    res = f(*args, **kwargs)
+  File "D:\项目\project\app\models.py", line 218, in unauthorized
+    code = get_code(request.headers['Authorization'])
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\werkzeug\datastructures.py", line 1354, in __getitem__
+    return _unicodify_header_value(self.environ['HTTP_' + key])
+KeyError: 'HTTP_AUTHORIZATION'
+2019-10-12 15:04:22,261 ERROR: Exception on /api/get_store_info [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 103, in decorated
+    return self.auth_error_callback()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 44, in decorated
+    res = f(*args, **kwargs)
+  File "D:\项目\project\app\models.py", line 218, in unauthorized
+    if not d_user:
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\werkzeug\datastructures.py", line 1354, in __getitem__
+    return _unicodify_header_value(self.environ['HTTP_' + key])
+KeyError: 'HTTP_AUTHORIZATION'
+2019-10-12 15:06:20,835 ERROR: Exception on /api/get_store_info [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 103, in decorated
+    return self.auth_error_callback()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 44, in decorated
+    res = f(*args, **kwargs)
+  File "D:\项目\project\app\models.py", line 218, in unauthorized
+    if not d_user:
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\werkzeug\datastructures.py", line 1354, in __getitem__
+    return _unicodify_header_value(self.environ['HTTP_' + key])
+KeyError: 'HTTP_AUTHORIZATION'
+2019-10-12 15:06:22,580 ERROR: Exception on /api/get_store_info [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 103, in decorated
+    return self.auth_error_callback()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 44, in decorated
+    res = f(*args, **kwargs)
+  File "D:\项目\project\app\models.py", line 218, in unauthorized
+    if not d_user:
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\werkzeug\datastructures.py", line 1354, in __getitem__
+    return _unicodify_header_value(self.environ['HTTP_' + key])
+KeyError: 'HTTP_AUTHORIZATION'
+2019-10-12 15:07:40,494 ERROR: Exception on /api/get_store_info [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 103, in decorated
+    return self.auth_error_callback()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 44, in decorated
+    res = f(*args, **kwargs)
+  File "D:\项目\project\app\models.py", line 218, in unauthorized
+    if not d_user:
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\werkzeug\datastructures.py", line 1354, in __getitem__
+    return _unicodify_header_value(self.environ['HTTP_' + key])
+KeyError: 'HTTP_AUTHORIZATION'
+2019-10-12 15:07:49,689 ERROR: Exception on /api/get_store_info [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 103, in decorated
+    return self.auth_error_callback()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 44, in decorated
+    res = f(*args, **kwargs)
+  File "D:\项目\project\app\models.py", line 218, in unauthorized
+    if not d_user:
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\werkzeug\datastructures.py", line 1354, in __getitem__
+    return _unicodify_header_value(self.environ['HTTP_' + key])
+KeyError: 'HTTP_AUTHORIZATION'
+2019-10-12 15:27:18,838 ERROR: Exception on /api/get_store_info [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 103, in decorated
+    return self.auth_error_callback()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 44, in decorated
+    res = f(*args, **kwargs)
+  File "D:\项目\project\app\models.py", line 218, in unauthorized
+    if not d_user:
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\werkzeug\datastructures.py", line 1354, in __getitem__
+    return _unicodify_header_value(self.environ['HTTP_' + key])
+KeyError: 'HTTP_AUTHORIZATION'
+2019-10-12 15:27:37,260 ERROR: Exception on /api/get_store_info [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 103, in decorated
+    return self.auth_error_callback()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 44, in decorated
+    res = f(*args, **kwargs)
+  File "D:\项目\project\app\models.py", line 218, in unauthorized
+    if not d_user:
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\werkzeug\datastructures.py", line 1354, in __getitem__
+    return _unicodify_header_value(self.environ['HTTP_' + key])
+KeyError: 'HTTP_AUTHORIZATION'
+2019-10-12 15:29:37,567 ERROR: Exception on /api/get_store_info [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 103, in decorated
+    return self.auth_error_callback()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 44, in decorated
+    res = f(*args, **kwargs)
+  File "D:\项目\project\app\models.py", line 218, in unauthorized
+    if not d_user:
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\werkzeug\datastructures.py", line 1354, in __getitem__
+    return _unicodify_header_value(self.environ['HTTP_' + key])
+KeyError: 'HTTP_AUTHORIZATION'
+2019-10-12 15:30:25,159 ERROR: Exception on /api/get_store_info [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 103, in decorated
+    return self.auth_error_callback()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 44, in decorated
+    res = f(*args, **kwargs)
+  File "D:\项目\project\app\models.py", line 218, in unauthorized
+    if not d_user:
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\werkzeug\datastructures.py", line 1354, in __getitem__
+    return _unicodify_header_value(self.environ['HTTP_' + key])
+KeyError: 'HTTP_AUTHORIZATION'
+2019-10-12 15:31:40,871 ERROR: Exception on /api/get_store_info [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 103, in decorated
+    return self.auth_error_callback()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 44, in decorated
+    res = f(*args, **kwargs)
+  File "D:\项目\project\app\models.py", line 218, in unauthorized
+    if not d_user:
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\werkzeug\datastructures.py", line 1354, in __getitem__
+    return _unicodify_header_value(self.environ['HTTP_' + key])
+KeyError: 'HTTP_AUTHORIZATION'

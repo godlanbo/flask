@@ -1,0 +1,481 @@
+2019-09-22 21:30:39,531 ERROR: Exception on /api/get_all_info [GET] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1249, in _execute_context
+    cursor, statement, parameters, context
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\default.py", line 552, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such column: merchant_information.rank_points
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\项目\project\app\routes.py", line 88, in get_all_info
+    return response_all_info_requests()
+  File "D:\项目\project\app\response.py", line 21, in response_all_info_requests
+    all_info = Merchant_information.query.all()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\query.py", line 3178, in all
+    return list(self)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\query.py", line 3334, in __iter__
+    return self._execute_and_instances(context)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\query.py", line 3359, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 988, in execute
+    return meth(self, multiparams, params)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1107, in _execute_clauseelement
+    distilled_params,
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1253, in _execute_context
+    e, statement, parameters, cursor, context
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1473, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1249, in _execute_context
+    cursor, statement, parameters, context
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\default.py", line 552, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such column: merchant_information.rank_points
+[SQL: SELECT merchant_information.id AS merchant_information_id, merchant_information.name AS merchant_information_name, merchant_information.addr AS merchant_information_addr, merchant_information.url AS merchant_information_url, merchant_information.contact AS merchant_information_contact, merchant_information.telnum AS merchant_information_telnum, merchant_information.info_from AS merchant_information_info_from, merchant_information.remark AS merchant_information_remark, merchant_information.channel AS merchant_information_channel, merchant_information.rank_points AS merchant_information_rank_points, merchant_information.update_time AS merchant_information_update_time 
+FROM merchant_information]
+(Background on this error at: http://sqlalche.me/e/e3q8)
+2019-09-22 21:31:42,670 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-22 21:31:50,789 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-22 21:46:48,659 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-22 21:46:49,114 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-22 21:50:23,317 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-22 21:51:01,373 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-22 21:51:01,832 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-22 21:51:39,792 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-22 22:00:21,705 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-22 22:07:02,584 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-22 22:08:15,436 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-22 22:10:25,902 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-22 22:11:53,679 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-22 22:12:42,772 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-22 22:15:06,543 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-22 22:24:21,108 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-22 22:29:04,054 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-22 22:31:51,970 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-22 22:34:39,236 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-22 22:35:09,240 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-22 22:35:27,605 ERROR: Exception on /api/check_account [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\项目\project\app\routes.py", line 16, in check_account
+    print(aaa)
+NameError: name 'aaa' is not defined
+2019-09-22 22:35:47,076 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-22 22:36:18,608 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-22 22:36:42,786 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-22 22:38:52,723 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-22 22:38:53,575 ERROR: Exception on /api/check_account [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\项目\project\app\routes.py", line 22, in check_account
+    telnum = data.name
+AttributeError: 'ImmutableMultiDict' object has no attribute 'name'
+2019-09-22 22:39:29,848 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-22 22:39:32,467 ERROR: Exception on /api/check_account [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\项目\project\app\routes.py", line 24, in check_account
+    telnum = data.name
+AttributeError: 'ImmutableMultiDict' object has no attribute 'name'
+2019-09-22 22:41:53,106 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-22 22:41:59,726 ERROR: Exception on /api/check_account [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\项目\project\app\routes.py", line 24, in check_account
+    telnum = data.name
+AttributeError: 'dict' object has no attribute 'name'
+2019-09-22 22:43:08,275 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-22 22:43:58,950 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-22 22:46:06,782 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-22 22:46:25,145 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-22 22:46:36,165 ERROR: Exception on /api/check_account [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\项目\project\app\routes.py", line 23, in check_account
+    if telnum==None or password==None:
+NameError: name 'password' is not defined
+2019-09-22 22:47:23,461 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-22 22:48:30,213 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-23 21:11:08,574 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-23 21:12:50,121 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-23 21:16:29,440 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-23 21:16:52,622 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-23 21:18:24,122 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-23 21:18:40,133 ERROR: Exception on /api/check_account [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\项目\project\app\routes.py", line 31, in check_account
+    user.add_ip(ip)
+  File "D:\项目\project\app\models.py", line 61, in add_ip
+    if len(self.ip_addr)/15<=right:
+TypeError: object of type 'NoneType' has no len()
+2019-09-23 21:18:43,586 ERROR: Exception on /api/check_account [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\项目\project\app\routes.py", line 31, in check_account
+    user.add_ip(ip)
+  File "D:\项目\project\app\models.py", line 61, in add_ip
+    if len(self.ip_addr)/15<=right:
+TypeError: object of type 'NoneType' has no len()
+2019-09-23 21:20:17,359 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-23 21:20:22,102 ERROR: Exception on /api/check_account [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\项目\project\app\routes.py", line 32, in check_account
+    db.commit()
+AttributeError: 'SQLAlchemy' object has no attribute 'commit'
+2019-09-23 21:21:31,118 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-23 21:21:34,485 ERROR: Exception on /api/check_account [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\项目\project\app\routes.py", line 33, in check_account
+    logout_user(user)
+TypeError: logout_user() takes 0 positional arguments but 1 was given
+2019-09-23 21:24:18,786 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-23 21:24:22,183 ERROR: Exception on /api/check_account [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\项目\project\app\routes.py", line 34, in check_account
+    return response_lsgin_requests(True,"登陆成功",user.generate_auth_token)
+NameError: name 'response_lsgin_requests' is not defined
+2019-09-23 21:24:51,233 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-23 21:24:55,368 ERROR: Exception on /api/check_account [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\项目\project\app\routes.py", line 34, in check_account
+    return response_login_requests(True,"登陆成功",user.generate_auth_token)
+  File "D:\项目\project\app\response.py", line 6, in response_login_requests
+    return jsonify({"success":success,"error_message":error_message,'token':token})
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\json\__init__.py", line 321, in jsonify
+    dumps(data, indent=indent, separators=separators) + '\n',
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\json\__init__.py", line 179, in dumps
+    rv = _json.dumps(obj, **kwargs)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\json\__init__.py", line 81, in default
+    return _json.JSONEncoder.default(self, o)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type method is not JSON serializable
+2019-09-23 21:27:20,137 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-23 21:27:28,786 ERROR: Exception on /api/check_account [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\项目\project\app\routes.py", line 34, in check_account
+    return user.generate_auth_token()
+  File "D:\项目\project\app\models.py", line 84, in generate_auth_token
+    s = Serializer(app.config['SECRET_KEY'], expires_in = expiration)
+NameError: name 'Serializer' is not defined
+2019-09-23 21:31:32,092 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-23 21:32:03,480 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-23 21:32:17,495 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-23 21:32:27,142 ERROR: Exception on /api/check_account [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\项目\project\app\routes.py", line 34, in check_account
+    return user.generate_auth_token()
+  File "D:\项目\project\app\models.py", line 83, in generate_auth_token
+    s = Serializer(app.config['SECRET_KEY'], expires_in = expiration)
+NameError: name 'app' is not defined
+2019-09-23 21:32:50,325 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-23 21:57:56,739 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-24 18:11:03,551 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-24 21:07:53,260 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-24 21:30:59,320 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-24 21:31:12,358 ERROR: Exception on /api/check_account [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1816, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1831, in finalize_request
+    response = self.make_response(rv)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1957, in make_response
+    'The view function did not return a valid response. The'
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2019-09-24 21:31:43,409 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-24 21:54:49,568 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-24 22:36:29,611 INFO: Microblog startup [in D:\项目\project\app\__init__.py:33]
+2019-09-24 22:45:24,443 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-09-24 22:48:17,529 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-09-25 10:08:17,532 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-09-25 10:13:06,381 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-09-25 10:13:21,565 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-09-25 10:13:37,782 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-09-25 10:19:09,562 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-09-25 10:19:18,780 ERROR: Exception on /api/check_account [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\项目\project\app\routes.py", line 21, in check_account
+    username = data['username']
+KeyError: 'username'
+2019-09-25 10:19:18,861 ERROR: Exception on /api/get_all_info [GET] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "D:\项目\project\app\models.py", line 92, in verify_auth_token
+    data = s.loads(token)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\itsdangerous\jws.py", line 187, in loads
+    self, s, salt, return_header=True
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\itsdangerous\jws.py", line 143, in loads
+    self.make_signer(salt, self.algorithm).unsign(want_bytes(s)),
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\itsdangerous\signer.py", line 165, in unsign
+    raise BadSignature("No %r found in value" % self.sep)
+itsdangerous.exc.BadSignature: No b'.' found in value
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 100, in decorated
+    if not self.authenticate(auth, password):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 137, in authenticate
+    return self.verify_password_callback(username, client_password)
+  File "D:\项目\project\app\models.py", line 157, in verify_password
+    user = User.verify_auth_token(username_or_token)
+  File "D:\项目\project\app\models.py", line 93, in verify_auth_token
+    except SignatureExpired:
+NameError: name 'SignatureExpired' is not defined
+2019-09-25 10:21:28,811 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-09-25 10:21:32,186 ERROR: Exception on /api/check_account [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\项目\project\app\routes.py", line 21, in check_account
+    username = data['username']
+KeyError: 'username'
+2019-09-25 10:21:32,458 ERROR: Exception on /api/get_all_info [GET] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 103, in decorated
+    return self.auth_error_callback()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 44, in decorated
+    res = f(*args, **kwargs)
+  File "D:\项目\project\app\models.py", line 167, in unauthorized
+    return jsonify({'error': 'Unauthorized access'}), 401
+NameError: name 'jsonify' is not defined
+2019-09-25 10:21:54,342 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-09-25 10:22:14,660 ERROR: Exception on /api/check_account [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\项目\project\app\routes.py", line 21, in check_account
+    username = data['username']
+KeyError: 'username'

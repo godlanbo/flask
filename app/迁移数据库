@@ -1,0 +1,3 @@
+1.首先在cmd中运行flask db init来创建microblog的迁移存储库
+2.运行flask db migrate子命令生成自动迁移
+3.flask db migrate命令不会对数据库进行任何更改，只会生成迁移脚本。 要将更改应用到数据库，必须使用flask db upgrade命令

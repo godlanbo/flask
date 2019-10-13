@@ -1,0 +1,483 @@
+2019-09-28 22:21:47,568 ERROR: Exception on /api/add_user [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 105, in decorated
+    return f(*args, **kwargs)
+  File "D:\项目\project\app\routes.py", line 45, in add_user
+    right = data.right
+AttributeError: 'dict' object has no attribute 'right'
+2019-09-29 18:30:17,208 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-09-29 18:33:08,701 ERROR: Exception on /api/add_user [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 105, in decorated
+    return f(*args, **kwargs)
+  File "D:\项目\project\app\routes.py", line 45, in add_user
+    right = data.right
+AttributeError: 'dict' object has no attribute 'right'
+2019-09-29 18:34:02,433 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-09-29 18:34:34,964 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-09-29 18:34:37,143 ERROR: Exception on /api/add_user [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 105, in decorated
+    return f(*args, **kwargs)
+  File "D:\项目\project\app\routes.py", line 48, in add_user
+    if g.user.right < 5 or right == 6:
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\werkzeug\local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: '_AppCtxGlobals' object has no attribute 'user'
+2019-09-29 18:37:54,913 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-09-29 18:40:10,311 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-09-29 18:40:19,287 ERROR: Exception on /api/add_user [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 105, in decorated
+    return f(*args, **kwargs)
+  File "D:\项目\project\app\routes.py", line 48, in add_user
+    user = g.user
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\werkzeug\local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: '_AppCtxGlobals' object has no attribute 'user'
+2019-09-29 18:41:23,353 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-09-29 18:41:31,426 ERROR: Exception on /api/add_user [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 105, in decorated
+    return f(*args, **kwargs)
+  File "D:\项目\project\app\routes.py", line 49, in add_user
+    user = g.user
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\werkzeug\local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: '_AppCtxGlobals' object has no attribute 'user'
+2019-09-29 18:43:15,390 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-09-29 18:44:42,164 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-09-29 18:44:44,269 ERROR: Exception on /api/add_user [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 105, in decorated
+    return f(*args, **kwargs)
+  File "D:\项目\project\app\routes.py", line 69, in add_user
+    user.reset_count()
+AttributeError: 'User' object has no attribute 'reset_count'
+2019-09-29 18:45:39,600 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-09-30 13:27:10,675 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-09-30 13:27:44,918 ERROR: Exception on /api/check_account [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\项目\project\app\routes.py", line 28, in check_account
+    if not user.check_ip(ip):
+  File "D:\项目\project\app\models.py", line 77, in check_ip
+    if self.right > 4 or ip_addr in self.ip_addr:
+TypeError: argument of type 'NoneType' is not iterable
+2019-09-30 13:30:32,839 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-10-02 21:40:58,683 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-10-02 21:41:27,450 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-10-02 21:41:43,851 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-10-02 21:42:06,414 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-10-02 21:46:43,656 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-10-02 21:46:52,423 ERROR: Exception on /api/del_user [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_login\utils.py", line 259, in decorated_view
+    elif not current_user.is_authenticated:
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\werkzeug\local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\werkzeug\local.py", line 306, in _get_current_object
+    return self.__local()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_login\utils.py", line 26, in <lambda>
+    current_user = LocalProxy(lambda: _get_user())
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_login\utils.py", line 335, in _get_user
+    current_app.login_manager._load_user()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_login\login_manager.py", line 359, in _load_user
+    return self.reload_user()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_login\login_manager.py", line 317, in reload_user
+    "No user_loader has been installed for this "
+Exception: No user_loader has been installed for this LoginManager. Refer tohttps://flask-login.readthedocs.io/en/latest/#how-it-works for more info.
+2019-10-02 21:47:59,724 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-10-02 21:48:04,143 ERROR: Exception on /api/del_user [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1249, in _execute_context
+    cursor, statement, parameters, context
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\default.py", line 552, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.InterfaceError: Error binding parameter 3 - probably unsupported type.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 105, in decorated
+    return f(*args, **kwargs)
+  File "D:\项目\project\app\routes.py", line 188, in del_user
+    db.session.commit()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\scoping.py", line 162, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\session.py", line 1027, in commit
+    self.transaction.commit()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\session.py", line 494, in commit
+    self._prepare_impl()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\session.py", line 473, in _prepare_impl
+    self.session.flush()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\session.py", line 2459, in flush
+    self._flush(objects)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\session.py", line 2597, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\util\compat.py", line 153, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\session.py", line 2557, in _flush
+    flush_context.execute()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 422, in execute
+    rec.execute(self)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 589, in execute
+    uow,
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\persistence.py", line 245, in save_obj
+    insert,
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\persistence.py", line 1138, in _emit_insert_statements
+    statement, params
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 988, in execute
+    return meth(self, multiparams, params)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1107, in _execute_clauseelement
+    distilled_params,
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1253, in _execute_context
+    e, statement, parameters, cursor, context
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1473, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1249, in _execute_context
+    cursor, statement, parameters, context
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\default.py", line 552, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.InterfaceError: (sqlite3.InterfaceError) Error binding parameter 3 - probably unsupported type.
+[SQL: INSERT INTO recircle_user (username, password_hash, telnum, ip_addr, other, delete_time, rest_day) VALUES (?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('1234567', 'pbkdf2:sha256:50000$FkW5pBKL$466e715982a304285885d9ed7a26955c809a2e62fba288bf416d60a528622773', '1234567', ['127.0.0.1'], None, '2019-10-02 21:48:04.140943', 30)]
+(Background on this error at: http://sqlalche.me/e/rvf5)
+2019-10-02 21:50:13,655 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-10-02 21:50:16,580 ERROR: Exception on /api/del_user [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1249, in _execute_context
+    cursor, statement, parameters, context
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\default.py", line 552, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.InterfaceError: Error binding parameter 3 - probably unsupported type.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 105, in decorated
+    return f(*args, **kwargs)
+  File "D:\项目\project\app\routes.py", line 188, in del_user
+    db.session.commit()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\scoping.py", line 162, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\session.py", line 1027, in commit
+    self.transaction.commit()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\session.py", line 494, in commit
+    self._prepare_impl()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\session.py", line 473, in _prepare_impl
+    self.session.flush()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\session.py", line 2459, in flush
+    self._flush(objects)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\session.py", line 2597, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\util\compat.py", line 153, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\session.py", line 2557, in _flush
+    flush_context.execute()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 422, in execute
+    rec.execute(self)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 589, in execute
+    uow,
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\persistence.py", line 245, in save_obj
+    insert,
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\persistence.py", line 1138, in _emit_insert_statements
+    statement, params
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 988, in execute
+    return meth(self, multiparams, params)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1107, in _execute_clauseelement
+    distilled_params,
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1253, in _execute_context
+    e, statement, parameters, cursor, context
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1473, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1249, in _execute_context
+    cursor, statement, parameters, context
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\default.py", line 552, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.InterfaceError: (sqlite3.InterfaceError) Error binding parameter 3 - probably unsupported type.
+[SQL: INSERT INTO recircle_user (username, password_hash, telnum, ip_addr, other, delete_time, rest_day) VALUES (?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('1234567', 'pbkdf2:sha256:50000$FkW5pBKL$466e715982a304285885d9ed7a26955c809a2e62fba288bf416d60a528622773', '1234567', ['127.0.0.1'], None, '2019-10-02 21:50:16.578741', 30)]
+(Background on this error at: http://sqlalche.me/e/rvf5)
+2019-10-02 21:54:13,768 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-10-02 21:54:33,464 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-10-02 21:54:52,971 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-10-02 21:55:11,478 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-10-06 17:02:20,690 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-10-06 17:02:38,266 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-10-06 17:03:01,485 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-10-06 17:03:43,284 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-10-06 17:03:52,779 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-10-06 17:04:17,071 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-10-06 17:04:43,865 ERROR: Exception on /api/check_account [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1249, in _execute_context
+    cursor, statement, parameters, context
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\default.py", line 552, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such column: user.account
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\项目\project\app\routes.py", line 23, in check_account
+    ok = verify_password(telnum, password)
+  File "D:\项目\project\app\models.py", line 176, in verify_password
+    user = User.query.filter_by(telnum = telnum).first()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\query.py", line 3232, in first
+    ret = list(self[0:1])
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\query.py", line 3018, in __getitem__
+    return list(res)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\query.py", line 3334, in __iter__
+    return self._execute_and_instances(context)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\query.py", line 3359, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 988, in execute
+    return meth(self, multiparams, params)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1107, in _execute_clauseelement
+    distilled_params,
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1253, in _execute_context
+    e, statement, parameters, cursor, context
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1473, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1249, in _execute_context
+    cursor, statement, parameters, context
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\default.py", line 552, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such column: user.account
+[SQL: SELECT user.id AS user_id, user.account AS user_account, user.company AS user_company, user."Contact" AS "user_Contact", user.telnum AS user_telnum, user.ip_addr AS user_ip_addr, user."right" AS user_right, user.password AS user_password, user.password_hash AS user_password_hash, user.search_count AS user_search_count, user.out_count AS user_out_count, user.data_count AS user_data_count 
+FROM user 
+WHERE user.telnum = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('1234567', 1, 0)]
+(Background on this error at: http://sqlalche.me/e/e3q8)
+2019-10-06 21:53:30,584 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-10-06 21:53:38,579 ERROR: Exception on /api/check_account [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1249, in _execute_context
+    cursor, statement, parameters, context
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\default.py", line 552, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such column: user.account
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\项目\project\app\routes.py", line 23, in check_account
+    ok = verify_password(telnum, password)
+  File "D:\项目\project\app\models.py", line 176, in verify_password
+    user = User.query.filter_by(account = account).first()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\query.py", line 3232, in first
+    ret = list(self[0:1])
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\query.py", line 3018, in __getitem__
+    return list(res)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\query.py", line 3334, in __iter__
+    return self._execute_and_instances(context)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\query.py", line 3359, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 988, in execute
+    return meth(self, multiparams, params)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1107, in _execute_clauseelement
+    distilled_params,
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1253, in _execute_context
+    e, statement, parameters, cursor, context
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1473, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1249, in _execute_context
+    cursor, statement, parameters, context
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\default.py", line 552, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such column: user.account
+[SQL: SELECT user.id AS user_id, user.account AS user_account, user.company AS user_company, user."Contact" AS "user_Contact", user.telnum AS user_telnum, user.ip_addr AS user_ip_addr, user."right" AS user_right, user.password AS user_password, user.password_hash AS user_password_hash, user.search_count AS user_search_count, user.out_count AS user_out_count, user.data_count AS user_data_count 
+FROM user 
+WHERE user.account = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('1234567', 1, 0)]
+(Background on this error at: http://sqlalche.me/e/e3q8)
+2019-10-06 21:54:02,359 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-10-06 21:54:09,095 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-10-06 21:54:29,513 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-10-06 21:55:08,819 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-10-06 21:57:57,204 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-10-06 21:58:01,888 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-10-06 21:58:07,166 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-10-06 21:59:28,819 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-10-06 21:59:31,661 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-10-06 22:01:13,086 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-10-06 22:01:16,137 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-10-06 22:01:28,290 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-10-06 22:01:32,859 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-10-06 22:02:01,909 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-10-06 22:13:57,951 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-10-06 22:17:58,134 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]

@@ -1,0 +1,473 @@
+2019-10-06 22:18:11,677 ERROR: Exception on /api/check_account [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\项目\project\app\routes.py", line 23, in check_account
+    ok = verify_password(account, password)
+  File "D:\项目\project\app\models.py", line 178, in verify_password
+    if not user or not user.check_password(password):
+  File "D:\项目\project\app\models.py", line 58, in check_password
+    return check_password_hash(self.password_hash, password)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\werkzeug\security.py", line 245, in check_password_hash
+    if pwhash.count('$') < 2:
+AttributeError: 'NoneType' object has no attribute 'count'
+2019-10-06 22:19:36,081 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-10-06 22:19:40,282 ERROR: Exception on /api/check_account [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\项目\project\app\routes.py", line 23, in check_account
+    ok = verify_password(account, password)
+  File "D:\项目\project\app\models.py", line 179, in verify_password
+    if not user or not user.check_password(password):
+  File "D:\项目\project\app\models.py", line 59, in check_password
+    return check_password_hash(self.password_hash, password)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\werkzeug\security.py", line 245, in check_password_hash
+    if pwhash.count('$') < 2:
+AttributeError: 'NoneType' object has no attribute 'count'
+2019-10-06 22:20:29,398 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-10-06 22:22:12,818 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-10-06 22:22:22,600 ERROR: Exception on /api/check_account [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\项目\project\app\routes.py", line 33, in check_account
+    return jsonify({"username":user.username,"telnum":user.telnum})\
+AttributeError: 'User' object has no attribute 'username'
+2019-10-06 22:23:35,416 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-10-06 22:28:49,453 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-10-09 10:10:15,572 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-10-09 10:12:10,622 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-10-09 10:12:10,622 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-10-09 10:12:38,622 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-10-09 10:12:38,622 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-10-09 10:12:38,622 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-10-09 10:13:00,902 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-10-09 10:13:00,902 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-10-09 10:13:00,902 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-10-09 10:13:00,902 INFO: Microblog startup [in D:\项目\project\app\__init__.py:35]
+2019-10-09 10:14:16,674 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:14:16,674 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:14:16,674 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:14:16,674 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:14:16,674 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:16:21,000 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:16:21,000 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:16:21,000 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:16:21,000 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:16:21,000 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:16:21,000 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:18:32,065 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:18:32,065 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:18:32,065 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:18:32,065 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:18:32,065 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:18:32,065 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:18:32,065 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:20:50,617 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:20:50,617 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:20:50,617 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:20:50,617 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:20:50,617 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:20:50,617 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:20:50,617 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:20:50,617 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:20:56,858 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:20:56,858 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:20:56,858 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:20:56,858 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:20:56,858 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:20:56,858 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:20:56,858 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:20:56,858 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:20:56,858 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:21:20,696 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:21:20,696 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:21:20,696 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:21:20,696 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:21:20,696 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:21:20,696 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:21:20,696 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:21:20,696 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:21:20,696 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:21:20,696 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:24:53,336 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:25:34,696 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:25:34,696 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:27:25,703 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:27:50,517 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:35:05,208 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:35:28,204 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:35:50,212 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:41:09,007 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:53:59,830 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:54:34,165 ERROR: Exception on /api/check_account [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\项目\project\app\routes.py", line 34, in check_account
+    return jsonify(user.to_dict())\
+AttributeError: 'User' object has no attribute 'to_dict'
+2019-10-09 10:55:29,391 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 10:55:33,254 ERROR: Exception on /api/check_account [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\项目\project\app\routes.py", line 34, in check_account
+    return jsonify(user.to_dict())\
+  File "D:\项目\project\app\models.py", line 95, in to_dict
+    return {"account":user.account,"company":user.account,"contact":user.contact,\
+NameError: name 'user' is not defined
+2019-10-09 10:56:12,695 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 11:01:47,499 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 11:32:29,346 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 16:02:17,450 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 16:02:22,439 ERROR: Exception on /api/add_user [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1249, in _execute_context
+    cursor, statement, parameters, context
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\default.py", line 552, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: user.account
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 105, in decorated
+    return f(*args, **kwargs)
+  File "D:\项目\project\app\routes.py", line 63, in add_user
+    db.session.commit()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\scoping.py", line 162, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\session.py", line 1027, in commit
+    self.transaction.commit()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\session.py", line 494, in commit
+    self._prepare_impl()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\session.py", line 473, in _prepare_impl
+    self.session.flush()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\session.py", line 2459, in flush
+    self._flush(objects)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\session.py", line 2597, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\util\compat.py", line 153, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\session.py", line 2557, in _flush
+    flush_context.execute()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 422, in execute
+    rec.execute(self)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 589, in execute
+    uow,
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\persistence.py", line 245, in save_obj
+    insert,
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\persistence.py", line 1138, in _emit_insert_statements
+    statement, params
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 988, in execute
+    return meth(self, multiparams, params)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1107, in _execute_clauseelement
+    distilled_params,
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1253, in _execute_context
+    e, statement, parameters, cursor, context
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1473, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\util\compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\util\compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1249, in _execute_context
+    cursor, statement, parameters, context
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\default.py", line 552, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: user.account
+[SQL: INSERT INTO user (account, company, contact, telnum, ip_addr, "right", password, password_hash, search_count, out_count, data_count) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: (1234, 'ibm', 'why', '12345', None, 1, '123456789', 'pbkdf2:sha256:50000$3XJoaHV9$b7d69272db095631abdadefd03178bf7e5c37f1175006087fb289e5f950f53e2', 10, 0, None)]
+(Background on this error at: http://sqlalche.me/e/gkpj)
+2019-10-09 16:03:33,789 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 21:11:50,751 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 21:12:12,596 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 21:13:50,697 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 21:14:19,408 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 21:14:59,356 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 21:15:51,916 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 21:18:34,364 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 21:18:44,556 ERROR: Exception on /api/get_user_info [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 105, in decorated
+    return f(*args, **kwargs)
+  File "D:\项目\project\app\routes.py", line 96, in get_user_info
+    user_info, pages = User.get_all_user(page_num)
+  File "D:\项目\project\app\models.py", line 104, in get_all_user
+    page = user.query.order_by(id).paginate(page_num,per_page=20,error_out=False)
+NameError: name 'user' is not defined
+2019-10-09 21:20:03,714 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 21:20:06,104 ERROR: Exception on /api/get_user_info [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 105, in decorated
+    return f(*args, **kwargs)
+  File "D:\项目\project\app\routes.py", line 96, in get_user_info
+    user_info, pages = User.get_all_user(page_num)
+  File "D:\项目\project\app\models.py", line 104, in get_all_user
+    page = User.query.order_by(id).paginate(page_num,per_page=20,error_out=False)
+  File "<string>", line 2, in order_by
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\base.py", line 220, in generate
+    fn(self, *args[1:], **kw)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\query.py", line 1825, in order_by
+    criterion = self._adapt_col_list(criterion)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\query.py", line 315, in _adapt_col_list
+    for o in cols
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\query.py", line 315, in <listcomp>
+    for o in cols
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\sql\elements.py", line 4483, in _literal_as_label_reference
+    return _literal_as_text(element)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\sql\elements.py", line 4526, in _literal_as_text
+    return _literal_as(element, _no_text_coercion)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\sql\elements.py", line 4518, in _literal_as
+    "instead" % type(element)
+sqlalchemy.exc.ArgumentError: SQL expression object expected, got object of type <class 'builtin_function_or_method'> instead
+2019-10-09 21:21:47,322 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 21:21:50,081 ERROR: Exception on /api/get_user_info [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 105, in decorated
+    return f(*args, **kwargs)
+  File "D:\项目\project\app\routes.py", line 96, in get_user_info
+    user_info, pages = User.get_all_user(page_num)
+  File "D:\项目\project\app\models.py", line 104, in get_all_user
+    page = User.query.order_by(id).paginate(page_num,per_page=20,error_out=False)
+  File "<string>", line 2, in order_by
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\base.py", line 220, in generate
+    fn(self, *args[1:], **kw)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\query.py", line 1825, in order_by
+    criterion = self._adapt_col_list(criterion)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\query.py", line 315, in _adapt_col_list
+    for o in cols
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\query.py", line 315, in <listcomp>
+    for o in cols
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\sql\elements.py", line 4483, in _literal_as_label_reference
+    return _literal_as_text(element)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\sql\elements.py", line 4526, in _literal_as_text
+    return _literal_as(element, _no_text_coercion)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\sql\elements.py", line 4518, in _literal_as
+    "instead" % type(element)
+sqlalchemy.exc.ArgumentError: SQL expression object expected, got object of type <class 'builtin_function_or_method'> instead
+2019-10-09 21:25:18,708 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 21:25:21,822 ERROR: Exception on /api/get_user_info [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 105, in decorated
+    return f(*args, **kwargs)
+  File "D:\项目\project\app\routes.py", line 96, in get_user_info
+    user_info, pages = User.get_all_user(page_num)
+  File "D:\项目\project\app\models.py", line 105, in get_all_user
+    all_user = page.item()
+AttributeError: 'Pagination' object has no attribute 'item'
+2019-10-09 21:25:52,330 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 21:25:56,147 ERROR: Exception on /api/get_user_info [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 105, in decorated
+    return f(*args, **kwargs)
+  File "D:\项目\project\app\routes.py", line 96, in get_user_info
+    user_info, pages = User.get_all_user(page_num)
+  File "D:\项目\project\app\models.py", line 104, in get_all_user
+    page = User.query.all().paginate(page_num,per_page=20,error_out=False)
+AttributeError: 'list' object has no attribute 'paginate'
+2019-10-09 21:27:06,211 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
+2019-10-09 21:27:08,685 ERROR: Exception on /api/get_user_info [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\sql\compiler.py", line 776, in visit_textual_label_reference
+    col = with_cols[element.element]
+KeyError: '-s_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 105, in decorated
+    return f(*args, **kwargs)
+  File "D:\项目\project\app\routes.py", line 96, in get_user_info
+    user_info, pages = User.get_all_user(page_num)
+  File "D:\项目\project\app\models.py", line 104, in get_all_user
+    page = User.query.order_by('-s_id').paginate(page_num,per_page=20,error_out=False)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_sqlalchemy\__init__.py", line 496, in paginate
+    items = self.limit(per_page).offset((page - 1) * per_page).all()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\query.py", line 3178, in all
+    return list(self)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\query.py", line 3334, in __iter__
+    return self._execute_and_instances(context)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\orm\query.py", line 3359, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 988, in execute
+    return meth(self, multiparams, params)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1098, in _execute_clauseelement
+    else None,
+  File "<string>", line 1, in <lambda>
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\sql\elements.py", line 462, in compile
+    return self._compiler(dialect, bind=bind, **kw)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\sql\elements.py", line 468, in _compiler
+    return dialect.statement_compiler(dialect, self, **kw)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\sql\compiler.py", line 571, in __init__
+    Compiled.__init__(self, dialect, statement, **kwargs)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\sql\compiler.py", line 319, in __init__
+    self.string = self.process(self.statement, **compile_kwargs)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\sql\compiler.py", line 350, in process
+    return obj._compiler_dispatch(self, **kwargs)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\sql\visitors.py", line 92, in _compiler_dispatch
+    return meth(self, **kw)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\sql\compiler.py", line 2139, in visit_select
+    text, select, inner_columns, froms, byfrom, kwargs
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\sql\compiler.py", line 2251, in _compose_select_body
+    text += self.order_by_clause(select, **kwargs)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\sql\compiler.py", line 2310, in order_by_clause
+    order_by = select._order_by_clause._compiler_dispatch(self, **kw)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\sql\visitors.py", line 92, in _compiler_dispatch
+    return meth(self, **kw)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\sql\compiler.py", line 982, in visit_clauselist
+    c._compiler_dispatch(self, **kw) for c in clauselist.clauses
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\sql\compiler.py", line 980, in <genexpr>
+    s
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\sql\compiler.py", line 982, in <genexpr>
+    c._compiler_dispatch(self, **kw) for c in clauselist.clauses
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\sql\visitors.py", line 92, in _compiler_dispatch
+    return meth(self, **kw)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\sql\compiler.py", line 781, in visit_textual_label_reference
+    "Can't resolve label reference for ORDER BY / GROUP BY.",
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\sqlalchemy\sql\elements.py", line 4556, in _no_text_coercion
+    "extra": "%s " % extra if extra else "",
+sqlalchemy.exc.CompileError: Can't resolve label reference for ORDER BY / GROUP BY. Textual SQL expression '-s_id' should be explicitly declared as text('-s_id')
+2019-10-09 21:29:01,938 INFO: Microblog startup [in D:\项目\project\app\__init__.py:39]
