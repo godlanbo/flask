@@ -1,0 +1,57 @@
+2019-10-13 22:02:51,441 ERROR: Exception on /api/get_re_user [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 105, in decorated
+    return f(*args, **kwargs)
+  File "D:\项目\project\app\routes.py", line 302, in get_re_user_info
+    searchState = data['searchState']
+KeyError: 'searchState'
+2019-10-13 22:02:59,132 ERROR: Exception on /api/get_re_user [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 105, in decorated
+    return f(*args, **kwargs)
+  File "D:\项目\project\app\routes.py", line 302, in get_re_user_info
+    searchState = data['searchState']
+KeyError: 'searchState'
+2019-10-13 22:10:24,727 ERROR: Exception on /api/get_store_info [POST] [in c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\认为、\appdata\local\programs\python\python37\lib\site-packages\flask_httpauth.py", line 105, in decorated
+    return f(*args, **kwargs)
+  File "D:\项目\project\app\routes.py", line 175, in get_store_info
+    page_num = int(data['pageNumber'])
+KeyError: 'pageNumber'
